@@ -2,19 +2,22 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const navLinks = [
-  { label: "Accueil", href: "/" },
-  { label: "Solutions", href: "/solutions" },
-  { label: "Intelligence Artificielle", href: "/ia" },
-  { label: "Réalisations", href: "/realisations" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { key: "nav.home", href: "/" },
+  { key: "nav.solutions", href: "/solutions" },
+  { key: "nav.ai", href: "/ia" },
+  { key: "nav.portfolio", href: "/realisations" },
+  { key: "nav.about", href: "/a-propos" },
+  { key: "nav.blog", href: "/blog" },
+  { key: "nav.contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-primary/10">
@@ -25,18 +28,19 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop */}
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-5">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               to={link.href}
               className="text-sm text-navy-foreground/70 hover:text-navy-foreground transition-colors font-body"
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
+          <LanguageSwitcher />
           <Button variant="hero" size="sm" asChild>
-            <Link to="/ia">Tester l'Agent IA</Link>
+            <Link to="/ia">{t("nav.cta")}</Link>
           </Button>
         </div>
 
@@ -60,11 +64,14 @@ const Navbar = () => {
               className="block py-3 text-navy-foreground/70 hover:text-navy-foreground transition-colors font-body text-sm border-b border-primary/5"
               onClick={() => setIsOpen(false)}
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
-          <Button variant="hero" size="sm" className="mt-4 w-full" asChild>
-            <Link to="/ia" onClick={() => setIsOpen(false)}>Tester l'Agent IA</Link>
+          <div className="py-3">
+            <LanguageSwitcher />
+          </div>
+          <Button variant="hero" size="sm" className="mt-2 w-full" asChild>
+            <Link to="/ia" onClick={() => setIsOpen(false)}>{t("nav.cta")}</Link>
           </Button>
         </div>
       )}

@@ -28,7 +28,7 @@ const Contact = () => {
       <main>
         <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
           <div className="absolute inset-0 opacity-10" style={{
-            backgroundImage: "linear-gradient(hsl(217 91% 50% / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(217 91% 50% / 0.3) 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(hsl(220 72% 33% / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(220 72% 33% / 0.3) 1px, transparent 1px)",
             backgroundSize: "60px 60px"
           }} />
           <div className="relative container mx-auto px-4 text-center">

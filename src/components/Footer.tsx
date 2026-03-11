@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -10,9 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <h3 className="font-display text-xl font-bold mb-4">
-              <span className="text-gradient">CYPHER</span> GLOBAL
-            </h3>
+            <img src={logo} alt="Cypher Global" className="h-12 w-auto mb-4" />
             <p className="text-navy-foreground/60 text-sm leading-relaxed font-body">{t("footer.desc")}</p>
           </div>
           <div>

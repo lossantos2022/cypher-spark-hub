@@ -59,6 +59,11 @@ export default {
           DEFAULT: "hsl(var(--electric))",
           glow: "hsl(var(--electric-glow))",
         },
+        "logo-blue": "hsl(var(--logo-blue))",
+        "logo-teal": "hsl(var(--logo-teal))",
+        "logo-red": "hsl(var(--logo-red))",
+        "logo-green": "hsl(var(--logo-green))",
+        "logo-orange": "hsl(var(--logo-orange))",
         surface: {
           DEFAULT: "hsl(var(--surface))",
           foreground: "hsl(var(--surface-foreground))",
@@ -93,8 +98,8 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(217 91% 50% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(217 91% 50% / 0.6)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(220 72% 33% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(220 72% 33% / 0.6)" },
         },
       },
       animation: {

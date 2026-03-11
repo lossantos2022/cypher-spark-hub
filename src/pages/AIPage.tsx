@@ -31,7 +31,7 @@ const AIPage = () => {
         {/* Hero */}
         <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full opacity-10" style={{
-            background: "radial-gradient(circle, hsl(217 91% 50% / 0.6), transparent 70%)"
+            background: "radial-gradient(circle, hsl(220 72% 33% / 0.6), transparent 70%)"
           }} />
           <div className="relative container mx-auto px-4 text-center">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl mx-auto">

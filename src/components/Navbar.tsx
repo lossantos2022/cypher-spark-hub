@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { key: "nav.home", href: "/" },
@@ -22,9 +23,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-md border-b border-primary/10">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="font-display text-xl font-bold text-navy-foreground tracking-tight">
-          <span className="text-gradient">CYPHER</span>{" "}
-          <span className="text-navy-foreground">GLOBAL</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Cypher Global" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}

@@ -59,6 +59,11 @@ export default {
           DEFAULT: "hsl(var(--electric))",
           glow: "hsl(var(--electric-glow))",
         },
+        "logo-blue": "hsl(var(--logo-blue))",
+        "logo-teal": "hsl(var(--logo-teal))",
+        "logo-red": "hsl(var(--logo-red))",
+        "logo-green": "hsl(var(--logo-green))",
+        "logo-orange": "hsl(var(--logo-orange))",
         surface: {
           DEFAULT: "hsl(var(--surface))",
           foreground: "hsl(var(--surface-foreground))",

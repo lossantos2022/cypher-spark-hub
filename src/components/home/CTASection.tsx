@@ -9,7 +9,7 @@ const CTASection = () => {
   return (
     <section className="py-20 bg-navy relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-20" style={{
-        background: "radial-gradient(circle, hsl(217 91% 50% / 0.4), transparent 70%)"
+        background: "radial-gradient(circle, hsl(220 72% 33% / 0.4), transparent 70%)"
       }} />
       <div className="relative container mx-auto px-4 text-center">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-2xl mx-auto">

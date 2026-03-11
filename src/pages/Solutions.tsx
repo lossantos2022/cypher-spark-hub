@@ -5,18 +5,22 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import networkImg from "@/assets/network-infrastructure.jpg";
+import securityImg from "@/assets/security-center.jpg";
+import aiImg from "@/assets/ai-illustration.jpg";
+import smartHomeImg from "@/assets/smart-home.jpg";
 
 const Solutions = () => {
   const { t } = useLanguage();
 
   const sections = [
-    { icon: Monitor, titleKey: "solpage.maintenance.title", descKey: "solpage.maintenance.desc", features: ["solpage.maintenance.f1", "solpage.maintenance.f2", "solpage.maintenance.f3", "solpage.maintenance.f4"], color: "from-primary to-electric" },
-    { icon: Network, titleKey: "solpage.network.title", descKey: "solpage.network.desc", features: ["solpage.network.f1", "solpage.network.f2", "solpage.network.f3", "solpage.network.f4"], color: "from-primary to-electric" },
-    { icon: Phone, titleKey: "solpage.telecom.title", descKey: "solpage.telecom.desc", features: ["solpage.telecom.f1", "solpage.telecom.f2", "solpage.telecom.f3", "solpage.telecom.f4"], color: "from-primary to-electric" },
-    { icon: Shield, titleKey: "solpage.backup.title", descKey: "solpage.backup.desc", features: ["solpage.backup.f1", "solpage.backup.f2", "solpage.backup.f3", "solpage.backup.f4"], color: "from-primary to-electric" },
-    { icon: Brain, titleKey: "solpage.ai.title", descKey: "solpage.ai.desc", features: ["solpage.ai.f1", "solpage.ai.f2", "solpage.ai.f3", "solpage.ai.f4"], color: "from-primary to-electric" },
-    { icon: Code, titleKey: "solpage.dev.title", descKey: "solpage.dev.desc", features: ["solpage.dev.f1", "solpage.dev.f2", "solpage.dev.f3", "solpage.dev.f4"], color: "from-primary to-electric" },
-    { icon: Home, titleKey: "solpage.domotique.title", descKey: "solpage.domotique.desc", features: ["solpage.domotique.f1", "solpage.domotique.f2", "solpage.domotique.f3", "solpage.domotique.f4"], color: "from-primary to-electric" },
+    { icon: Monitor, titleKey: "solpage.maintenance.title", descKey: "solpage.maintenance.desc", features: ["solpage.maintenance.f1", "solpage.maintenance.f2", "solpage.maintenance.f3", "solpage.maintenance.f4"], image: networkImg },
+    { icon: Network, titleKey: "solpage.network.title", descKey: "solpage.network.desc", features: ["solpage.network.f1", "solpage.network.f2", "solpage.network.f3", "solpage.network.f4"], image: networkImg },
+    { icon: Phone, titleKey: "solpage.telecom.title", descKey: "solpage.telecom.desc", features: ["solpage.telecom.f1", "solpage.telecom.f2", "solpage.telecom.f3", "solpage.telecom.f4"], image: securityImg },
+    { icon: Shield, titleKey: "solpage.backup.title", descKey: "solpage.backup.desc", features: ["solpage.backup.f1", "solpage.backup.f2", "solpage.backup.f3", "solpage.backup.f4"], image: securityImg },
+    { icon: Brain, titleKey: "solpage.ai.title", descKey: "solpage.ai.desc", features: ["solpage.ai.f1", "solpage.ai.f2", "solpage.ai.f3", "solpage.ai.f4"], image: aiImg },
+    { icon: Code, titleKey: "solpage.dev.title", descKey: "solpage.dev.desc", features: ["solpage.dev.f1", "solpage.dev.f2", "solpage.dev.f3", "solpage.dev.f4"], image: networkImg },
+    { icon: Home, titleKey: "solpage.domotique.title", descKey: "solpage.domotique.desc", features: ["solpage.domotique.f1", "solpage.domotique.f2", "solpage.domotique.f3", "solpage.domotique.f4"], image: smartHomeImg },
   ];
 
   return (
@@ -24,9 +28,11 @@ const Solutions = () => {
       <Navbar />
       <main>
         {/* Hero */}
-        <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10" style={{
-            backgroundImage: "linear-gradient(hsl(220 72% 33% / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(220 72% 33% / 0.3) 1px, transparent 1px)",
+        <section className="pt-28 pb-20 relative overflow-hidden" style={{
+          background: "linear-gradient(135deg, hsl(220 35% 12%), hsl(220 30% 18%), hsl(180 35% 15%))"
+        }}>
+          <div className="absolute inset-0 opacity-[0.06]" style={{
+            backgroundImage: "linear-gradient(hsl(220 72% 50% / 0.4) 1px, transparent 1px), linear-gradient(90deg, hsl(220 72% 50% / 0.4) 1px, transparent 1px)",
             backgroundSize: "60px 60px"
           }} />
           <div className="relative container mx-auto px-4 text-center">
@@ -40,9 +46,9 @@ const Solutions = () => {
         </section>
 
         {/* Solutions list */}
-        <section className="py-20">
+        <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="space-y-16">
+            <div className="space-y-24">
               {sections.map((section, i) => (
                 <motion.div
                   key={i}
@@ -50,25 +56,29 @@ const Solutions = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+                  className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
                 >
                   <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6">
-                      <section.icon size={32} />
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary text-primary-foreground mb-6 shadow-sm">
+                      <section.icon size={28} />
                     </div>
                     <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-4">{t(section.titleKey)}</h2>
                     <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">{t(section.descKey)}</p>
                     <ul className="space-y-3">
                       {section.features.map((fKey, j) => (
-                        <li key={j} className="flex items-center gap-3">
-                          <CheckCircle size={18} className="text-primary shrink-0" />
+                        <li key={j} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gradient-blue-teal transition-colors">
+                          <CheckCircle size={18} className="text-secondary shrink-0" />
                           <span className="font-body text-foreground text-sm">{t(fKey)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className={`${i % 2 === 1 ? "lg:order-1" : ""} bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-10 flex items-center justify-center min-h-[280px] border border-primary/10`}>
-                    <section.icon size={120} className="text-primary/20" />
+                  <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                    <img
+                      src={section.image}
+                      alt={t(section.titleKey)}
+                      className="rounded-2xl shadow-elevated w-full object-cover aspect-[4/3]"
+                    />
                   </div>
                 </motion.div>
               ))}
@@ -77,14 +87,16 @@ const Solutions = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-navy">
+        <section className="py-20" style={{
+          background: "linear-gradient(135deg, hsl(220 35% 12%), hsl(220 30% 18%), hsl(180 35% 15%))"
+        }}>
           <div className="container mx-auto px-4 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-foreground mb-6">
                 {t("cta.title1")}<span className="text-gradient">{t("cta.title2")}</span>
               </h2>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button variant="hero" size="lg" asChild>
+                <Button variant="hero" size="lg" className="shadow-glow" asChild>
                   <Link to="/contact">{t("solpage.cta")}</Link>
                 </Button>
                 <Button variant="heroOutline" size="lg" asChild>

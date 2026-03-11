@@ -121,6 +121,11 @@
     background-image: var(--gradient-primary);
   }
 
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
   .bg-navy {
     background-color: hsl(var(--navy));
   }

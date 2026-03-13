@@ -122,7 +122,7 @@ const Contact = () => {
                     </div>
                     <span className="text-xs font-body text-foreground font-medium">{t("contact.call")}</span>
                   </a>
-                  <a href="mailto:contact@cypherglobal.ci"
+                  <a href="mailto:infos@cypherglobal.net"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-logo-orange/10 flex items-center justify-center">
                       <Mail size={22} className="text-logo-orange" />

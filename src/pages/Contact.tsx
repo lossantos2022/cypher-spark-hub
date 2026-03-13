@@ -90,7 +90,7 @@ const Contact = () => {
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">
                         <Phone size={20} />
                       </div>
-                      <p className="font-body text-foreground text-sm">+225 XX XX XX XX</p>
+                      <p className="font-body text-foreground text-sm">+225 27 21 38 80 06<br />Cel: 07 49 50 40 13</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">

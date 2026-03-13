@@ -199,7 +199,7 @@ const AIPage = () => {
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <Button variant="default" size="sm" asChild>
-                    <a href="https://wa.me/225XXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer">
                       <MessageCircle size={16} className="mr-2" /> WhatsApp
                     </a>
                   </Button>

@@ -189,31 +189,13 @@ const AIPage = () => {
                 </div>
                 <div className="ml-auto w-2 h-2 rounded-full bg-logo-green animate-pulse" />
               </div>
-              <div className="p-6 min-h-[300px] flex flex-col justify-center items-center text-center">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center mb-4">
-                  <MessageSquare size={28} className="text-primary" />
-                </div>
-                <p className="font-display text-lg font-semibold text-foreground mb-2">Agent IA bientôt disponible</p>
-                <p className="text-sm text-muted-foreground font-body mb-6 max-w-sm">
-                  Notre chatbot intelligent sera intégré ici prochainement. En attendant, contactez-nous directement.
-                </p>
-                <div className="flex flex-wrap justify-center gap-3">
-                  <Button variant="default" size="sm" asChild>
-                    <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer">
-                      <MessageCircle size={16} className="mr-2" /> WhatsApp
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <a href="https://t.me/CypherGlobalBot" target="_blank" rel="noopener noreferrer">
-                      <Bot size={16} className="mr-2" /> Telegram
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="sm" asChild>
-                    <Link to="/contact">
-                      <ExternalLink size={16} className="mr-2" /> Contact
-                    </Link>
-                  </Button>
-                </div>
+              <div className="w-full" style={{ height: "500px" }}>
+                <iframe
+                  src="https://chatbotia.cypherglobal.net/"
+                  title="Cypher AI Agent"
+                  className="w-full h-full border-0"
+                  allow="microphone"
+                />
               </div>
             </motion.div>
           </div>

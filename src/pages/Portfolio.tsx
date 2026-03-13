@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Network, Phone, Camera, Cloud, Code, Brain, ArrowRight } from "lucide-react";
+import { Network, Phone, Camera, Cloud, Code, Brain, Wrench, Monitor, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import Navbar from "@/components/Navbar";
@@ -13,12 +13,14 @@ const Portfolio = () => {
   const { t } = useLanguage();
 
   const projects = [
-    { icon: Network, title: t("portfolio.p1.title"), client: t("portfolio.p1.client"), desc: t("portfolio.p1.desc"), tag: t("portfolio.tag.network"), image: networkImg },
-    { icon: Phone, title: t("portfolio.p2.title"), client: t("portfolio.p2.client"), desc: t("portfolio.p2.desc"), tag: t("portfolio.tag.telecom"), image: securityImg },
-    { icon: Camera, title: t("portfolio.p3.title"), client: t("portfolio.p3.client"), desc: t("portfolio.p3.desc"), tag: t("portfolio.tag.security"), image: securityImg },
-    { icon: Cloud, title: t("portfolio.p4.title"), client: t("portfolio.p4.client"), desc: t("portfolio.p4.desc"), tag: t("portfolio.tag.cloud"), image: networkImg },
-    { icon: Code, title: t("portfolio.p5.title"), client: t("portfolio.p5.client"), desc: t("portfolio.p5.desc"), tag: t("portfolio.tag.dev"), image: aiImg },
-    { icon: Brain, title: t("portfolio.p6.title"), client: t("portfolio.p6.client"), desc: t("portfolio.p6.desc"), tag: t("portfolio.tag.ai"), image: aiImg },
+    { icon: Camera, title: t("portfolio.p1.title"), client: t("portfolio.p1.client"), desc: t("portfolio.p1.desc"), tag: t("portfolio.tag.erp"), image: securityImg },
+    { icon: Network, title: t("portfolio.p2.title"), client: t("portfolio.p2.client"), desc: t("portfolio.p2.desc"), tag: t("portfolio.tag.infra"), image: networkImg },
+    { icon: Code, title: t("portfolio.p3.title"), client: t("portfolio.p3.client"), desc: t("portfolio.p3.desc"), tag: t("portfolio.tag.erp"), image: aiImg },
+    { icon: Wrench, title: t("portfolio.p4.title"), client: t("portfolio.p4.client"), desc: t("portfolio.p4.desc"), tag: t("portfolio.tag.cloud"), image: networkImg },
+    { icon: Monitor, title: t("portfolio.p5.title"), client: t("portfolio.p5.client"), desc: t("portfolio.p5.desc"), tag: t("portfolio.tag.cloud"), image: aiImg },
+    { icon: Network, title: t("portfolio.p6.title"), client: t("portfolio.p6.client"), desc: t("portfolio.p6.desc"), tag: t("portfolio.tag.network"), image: networkImg },
+    { icon: Shield, title: t("portfolio.p7.title"), client: t("portfolio.p7.client"), desc: t("portfolio.p7.desc"), tag: t("portfolio.tag.infra"), image: securityImg },
+    { icon: Phone, title: t("portfolio.p8.title"), client: t("portfolio.p8.client"), desc: t("portfolio.p8.desc"), tag: t("portfolio.tag.security"), image: securityImg },
   ];
 
   return (

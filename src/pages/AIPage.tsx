@@ -19,7 +19,7 @@ const AIPage = () => {
   const features = [t("aipage.solution.f1"), t("aipage.solution.f2"), t("aipage.solution.f3"), t("aipage.solution.f4")];
 
   const channels = [
-    { icon: Globe, label: t("aipage.channels.web"), color: "from-primary to-secondary", link: "#chatbot" },
+    { icon: Globe, label: t("aipage.channels.web"), color: "from-primary to-secondary", link: "https://chatbotia.cypherglobal.net/" },
     { icon: MessageCircle, label: t("aipage.channels.whatsapp"), color: "from-logo-green to-secondary", link: "https://wa.me/2250749504013" },
     { icon: Bot, label: t("aipage.channels.telegram"), color: "from-primary to-electric", link: "https://t.me/CypherGlobalBot" },
     { icon: Zap, label: t("aipage.channels.api"), color: "from-logo-orange to-logo-red", link: "/contact" },

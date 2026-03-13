@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
           className={`px-2 py-1 text-xs rounded-md transition-all font-body ${
             lang === l.code
               ? "bg-primary text-primary-foreground"
-              : "text-navy-foreground/60 hover:text-navy-foreground hover:bg-primary/10"
+              : "text-foreground/80 hover:text-foreground hover:bg-primary/10 bg-muted/50"
           }`}
           title={l.label}
         >

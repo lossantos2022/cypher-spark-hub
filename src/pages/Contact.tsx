@@ -108,7 +108,7 @@ const Contact = () => {
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
-                  <a href="https://wa.me/225XXXXXXXX" target="_blank" rel="noopener noreferrer"
+                  <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-logo-green/10 flex items-center justify-center">
                       <MessageCircle size={22} className="text-logo-green" />

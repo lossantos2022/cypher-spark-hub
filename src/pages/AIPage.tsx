@@ -20,7 +20,7 @@ const AIPage = () => {
 
   const channels = [
     { icon: Globe, label: t("aipage.channels.web"), color: "from-primary to-secondary", link: "#chatbot" },
-    { icon: MessageCircle, label: t("aipage.channels.whatsapp"), color: "from-logo-green to-secondary", link: "https://wa.me/225XXXXXXXX" },
+    { icon: MessageCircle, label: t("aipage.channels.whatsapp"), color: "from-logo-green to-secondary", link: "https://wa.me/2250749504013" },
     { icon: Bot, label: t("aipage.channels.telegram"), color: "from-primary to-electric", link: "https://t.me/CypherGlobalBot" },
     { icon: Zap, label: t("aipage.channels.api"), color: "from-logo-orange to-logo-red", link: "/contact" },
   ];
@@ -52,7 +52,7 @@ const AIPage = () => {
                     <a href="#chatbot">{t("aipage.cta")}</a>
                   </Button>
                   <Button variant="heroOutline" size="lg" asChild>
-                    <a href="https://wa.me/225XXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer">
                       <MessageCircle size={18} className="mr-2" /> WhatsApp
                     </a>
                   </Button>
@@ -199,7 +199,7 @@ const AIPage = () => {
                 </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   <Button variant="default" size="sm" asChild>
-                    <a href="https://wa.me/225XXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer">
                       <MessageCircle size={16} className="mr-2" /> WhatsApp
                     </a>
                   </Button>

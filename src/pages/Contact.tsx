@@ -90,13 +90,13 @@ const Contact = () => {
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">
                         <Phone size={20} />
                       </div>
-                      <p className="font-body text-foreground text-sm">+225 XX XX XX XX</p>
+                      <p className="font-body text-foreground text-sm">+225 27 21 38 80 06<br />Cel: 07 49 50 40 13</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">
                         <Mail size={20} />
                       </div>
-                      <p className="font-body text-foreground text-sm">contact@cypherglobal.ci</p>
+                      <p className="font-body text-foreground text-sm">infos@cypherglobal.net</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">
@@ -108,21 +108,21 @@ const Contact = () => {
                 </div>
 
                 <div className="grid grid-cols-3 gap-3">
-                  <a href="https://wa.me/225XXXXXXXX" target="_blank" rel="noopener noreferrer"
+                  <a href="https://wa.me/2250749504013" target="_blank" rel="noopener noreferrer"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-logo-green/10 flex items-center justify-center">
                       <MessageCircle size={22} className="text-logo-green" />
                     </div>
                     <span className="text-xs font-body text-foreground font-medium">{t("contact.whatsapp")}</span>
                   </a>
-                  <a href="tel:+225XXXXXXXX"
+                  <a href="tel:+2252721388006"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <PhoneCall size={22} className="text-primary" />
                     </div>
                     <span className="text-xs font-body text-foreground font-medium">{t("contact.call")}</span>
                   </a>
-                  <a href="mailto:contact@cypherglobal.ci"
+                  <a href="mailto:infos@cypherglobal.net"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-logo-orange/10 flex items-center justify-center">
                       <Mail size={22} className="text-logo-orange" />

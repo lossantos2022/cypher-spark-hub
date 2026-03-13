@@ -96,7 +96,7 @@ const Contact = () => {
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">
                         <Mail size={20} />
                       </div>
-                      <p className="font-body text-foreground text-sm">contact@cypherglobal.ci</p>
+                      <p className="font-body text-foreground text-sm">infos@cypherglobal.net</p>
                     </li>
                     <li className="flex items-start gap-4">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary text-primary-foreground shrink-0 shadow-sm">

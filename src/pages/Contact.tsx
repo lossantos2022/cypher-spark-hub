@@ -115,7 +115,7 @@ const Contact = () => {
                     </div>
                     <span className="text-xs font-body text-foreground font-medium">{t("contact.whatsapp")}</span>
                   </a>
-                  <a href="tel:+225XXXXXXXX"
+                  <a href="tel:+2252721388006"
                     className="flex flex-col items-center gap-2 p-5 bg-card border border-border rounded-xl hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <PhoneCall size={22} className="text-primary" />
